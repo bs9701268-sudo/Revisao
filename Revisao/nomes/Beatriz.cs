@@ -1,4 +1,4 @@
-﻿namespace Beatriz.nomes
+﻿namespace Nomes
 {
     public class Beatriz
     {

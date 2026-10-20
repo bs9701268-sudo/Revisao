@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Revisao;
+
+Brenda nome = new Brenda();
+Brenda.Nome = "BRENDA";
+Brenda.Idade = new List<string>() { "17"};
+Brenda.habilidade = new List<string>() { "voar" };
+

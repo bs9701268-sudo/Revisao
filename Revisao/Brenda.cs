@@ -8,8 +8,16 @@ namespace Revisao
 {
     internal class Brenda
     {
-       public string Nome { get; set; }
-        public int Idade { get; set; }
-        public List<string> Hablidades { get; set; }
+        public string Nome;
+        public int Idade;
+        public List<string> Hablidades;
+        public void ExibirDados()
+        {
+            Console.WriteLine($"Meu nome é{Nome}");
+            foreach(char nome2 in Nome)
+            {
+                Console.WriteLine($" - {Nome}");
+            }
+        }
     }
 }

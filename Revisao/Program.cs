@@ -1,17 +1,18 @@
-﻿using Revisao;
-using Nomes;
+﻿
+using Revisao;
 
-Brenda nome = new Brenda();
-nome.Nome = "BRENDA";
-nome.Idade = 17;
-nome.Hablidades = new List<string>() { "voar" };
+beatrizservice beatriz = new beatrizservice();
 
+beatriz.Id = 1;
+beatriz.Apelido = "Bea e Bia";
+beatriz.Idade = 17;
+beatriz.Sexo = "Feminino";
 
+beatriz.Beatriz.Add("Beatriz");
+beatriz.Beatriz.Add("Beatriz Silva");
 
-Beatriz nome1 = new Beatriz();
+beatriz.Habilidade.Add("Ouvir música");
+beatriz.Habilidade.Add("Assistir séries");
+beatriz.Habilidade.Add("Sair com amigos");
 
-nome1.Nome = "Beatriz";
-
-nome1.Idade = 17 ;
-
-nome1.Habilidades = new List<string>() { "voar" };
+beatriz.ExibirDados();

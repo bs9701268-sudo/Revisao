@@ -9,7 +9,7 @@ beatriz.Idade = 17;
 beatriz.Sexo = "Feminino";
 
 beatriz.Beatriz.Add("Beatriz");
-beatriz.Beatriz.Add("Beatriz Silva");
+beatriz.Beatriz.Add("Beatriz Steffany");
 
 beatriz.Habilidade.Add("Ouvir música");
 beatriz.Habilidade.Add("Assistir séries");

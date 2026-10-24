@@ -1,45 +1,38 @@
 ﻿
-using System;
-using System.Collections.Generic;
 
-namespace Revisao
+BeatrizRepository.Inicializar();
+
+int opcao = 0;
+
+while (opcao != -1)
 {
-    public class Prova
+    Console.WriteLine("\n===== MEUS DADOS =====");
+    Console.WriteLine("1 - Adicionar meus dados");
+    Console.WriteLine("2 - Listar meus dados");
+    Console.WriteLine("0 - Sair");
+    Console.WriteLine("Digite a opção desejada:");
+
+    if (!int.TryParse(Console.ReadLine(), out opcao))
     {
-        public int Id { get; set; }
-        public string Nome { get; set; }
-        public int Idade { get; set; }
-        public string Apelido { get; set; }
-        public string Sexo { get; set; }
+        Console.WriteLine("Digite uma opção válida!");
+        continue;
+    }
 
-        public List<string> Beatriz { get; set; }
-            = new List<string>();
-
-        public List<string> Habilidade { get; set; }
-            = new List<string>();
-
-        public void ExibirDados()
-        {
-            Console.WriteLine("\n===== MEUS DADOS =====");
-            Console.WriteLine($"ID: {Id}");
-            Console.WriteLine($"Nome: {Nome}");
-            Console.WriteLine($"Idade: {Idade}");
-            Console.WriteLine($"Apelido: {Apelido}");
-            Console.WriteLine($"Sexo: {Sexo}");
-
-            Console.WriteLine("\nNomes:");
-
-            foreach (string nome in Beatriz)
-            {
-                Console.WriteLine($"- {nome}");
-            }
-
-            Console.WriteLine("\nHabilidades:");
-
-            foreach (string habilidade in Habilidade)
-            {
-                Console.WriteLine($"- {habilidade}");
-            }
-        }
+    if (opcao == 1)
+    {
+        BeatrizService.Adicionar();
+    }
+    else if (opcao == 2)
+    {
+        BeatrizService.Listar();
+    }
+    else if (opcao == 0)
+    {
+        opcao = -1;
+        Console.WriteLine("Sistema encerrado!");
+    }
+    else
+    {
+        Console.WriteLine("Opção inválida!");
     }
 }

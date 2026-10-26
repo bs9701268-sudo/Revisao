@@ -1,6 +1,9 @@
 ﻿
 
 using Revisao.Infraestrutura;
+using Revisao.service;
+
+BeatrizRepository.Inicializar();
 
 beatrizreposity.Inicializar();
 

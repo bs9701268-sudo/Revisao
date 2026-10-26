@@ -12,12 +12,12 @@ namespace Revisao.service
         {
             new Beatriz()
             {
-                Id = 1,
-                Nome = "Beatriz Steffany",
-                Apelido = "Bea e Bia",
-                Idade = 18,
-                Sexo = "Feminino",
-                Gostos = new List<string>()
+               Id = 1,
+               Nome = "Beatriz Steffany",
+               Apelido = "Bea e Bia",
+               Idade = 18,
+               Sexo = "Feminino",
+               Gostos = new List<string>()
                 {
                     "Ouvir música",
                     "Assistir séries",

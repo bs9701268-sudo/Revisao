@@ -3,12 +3,17 @@
 
     public class Beatriz
     {
+        public int Id; 
 
         public string Nome;
 
+        public string Apelido;
+
         public int Idade;
 
-        public List<string> Habilidades;
+        public string Sexo;
+
+        public List<string> Gostos;
 
         public void ExibirDados()
         {

@@ -49,7 +49,7 @@ namespace Revisao.Infraestrutura
             comando.Parameters.AddWithValue("$sexo", pessoa.Sexo);
             comando.Parameters.AddWithValue(
                 "$habilidades",
-                JsonSerializer.Serialize(pessoa.Habilidades)
+                JsonSerializer.Serialize(pessoa.Gostos)
             );
 
             comando.ExecuteNonQuery();
@@ -82,7 +82,7 @@ namespace Revisao.Infraestrutura
                 pessoa.Idade = leitor.GetInt32(3);
                 pessoa.Sexo = leitor.GetString(4);
 
-                pessoa.Habilidades =
+                pessoa.Gostos =
                     JsonSerializer.Deserialize<List<string>>(
                         leitor.GetString(5)
                     ) ?? new List<string>();

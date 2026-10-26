@@ -5,8 +5,6 @@ using Revisao.service;
 
 BeatrizRepository.Inicializar();
 
-beatrizreposity.Inicializar();
-
 int opcao = 0;
 
 while (opcao != -1)

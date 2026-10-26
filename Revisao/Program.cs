@@ -1,6 +1,8 @@
 ﻿
 
-BeatrizRepository.Inicializar();
+using Revisao.Infraestrutura;
+
+beatrizreposity.Inicializar();
 
 int opcao = 0;
 

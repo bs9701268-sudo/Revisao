@@ -10,25 +10,12 @@ namespace Revisao.service
     {
         public static List<Brenda> BancoDados = new List<Brenda>()
         {
-            new Beatriz()
-            {
-                Id = 2,
-                Nome = "Brenda Ribeiro",
-                Apelido = "Ribeiro",
-                Idade = 18,
-                Sexo = "Feminino",
-                Gostos = new List<string>()
-                {
-                    "Ouvir música",
-                    "Assistir séries",
-                    "Sair com amigos"
-                }
-            }
+           
         };
 
         public static void Adicionar()
         {
-            Beatriz pessoa = new Beatriz();
+            Brenda pessoa = new Brenda();
 
             pessoa.Id = BancoDados.Count > 0
                 ? BancoDados.Max(p => p.Id) + 1
@@ -67,7 +54,7 @@ namespace Revisao.service
 
         public static void Listar()
         {
-            foreach (Beatriz item in BancoDados)
+            foreach (Brenda item in BancoDados)
             {
                 item.ExibirDados();
             }

@@ -1,23 +1,29 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Revisao
+﻿namespace Nomes
 {
-    internal class Brenda
+
+    public class Brenda
     {
+        public int Id;
+
         public string Nome;
+
+        public string Apelido;
+
         public int Idade;
-        public List<string> Hablidades;
+
+        public string Sexo;
+
+        public List<string> Gostos;
+
         public void ExibirDados()
         {
-            Console.WriteLine($"Meu nome é{Nome}");
-            foreach(char nome2 in Nome)
+            Console.WriteLine($"meu nome é {Nome}");
+
+            foreach (char nome in Nome)
             {
                 Console.WriteLine($" - {Nome}");
             }
         }
     }
 }
+
